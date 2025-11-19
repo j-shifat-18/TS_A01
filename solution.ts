@@ -10,6 +10,8 @@ const formatValue = (input: FormatType): FormatType => {
   }
 };
 
+
+
 type LenghtType = string | number[];
 
 const getLength = (input: LenghtType): number => {
@@ -19,7 +21,6 @@ const getLength = (input: LenghtType): number => {
     return input.length;
   }
 };
-
 
 
 
@@ -34,7 +35,7 @@ class Person {
   }
 
   getDetails() {
-    return `'Name : ${this.name} , Age : ${this.age}'`;
+    return `'Name: ${this.name}, Age: ${this.age}'`;
   }
 }
 
@@ -60,6 +61,10 @@ const filterByRating = (arr: Item[]) => {
   return filteredArray;
 };
 
+
+
+
+
 type User = {
   id: number;
   name: string;
@@ -70,6 +75,9 @@ type User = {
 const filterActiveUsers = (users: User[]) => {
   return users.filter((user) => user.isActive);
 };
+
+
+
 
 interface Book {
   title: string;
@@ -116,7 +124,6 @@ const getUniqueValues = (
 
 
 
-
 type Product = {
   name: string;
   price: number;
@@ -135,5 +142,6 @@ const calculateTotalPrice = (arr: Product[]) : number => {
 
   return totalPrice;
 };
+
 
 
